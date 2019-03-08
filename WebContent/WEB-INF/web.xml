@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>hello_world</display-name>
+  
+  <servlet>
+  	<servlet-name>helloworld</servlet-name>
+ 	<servlet-class>com.sys4u.helloworld.servlet.HelloWorldServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>helloworld</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <!--
+   URL : localhost:8080/Context Path(=패키지 명)
+      위의 URL을 입력하면 Welcom-file인 index.html이 열린다.
+      
+  	하지만, localhost:8080/Context Path(=패키지 명)/Servlet Path
+  	를 브라우저에 입력하면 위의 Servlet Mapping에 따라 해당 Servlet을 실행한다. 
+  
+   -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <!--  
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    -->
+  </welcome-file-list>
+</web-app>
