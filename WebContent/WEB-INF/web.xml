@@ -3,12 +3,12 @@
   <display-name>hello_world</display-name>
   
   <servlet>
-  	<servlet-name>helloworld</servlet-name>
+  	<servlet-name>helloServlet</servlet-name>
  	<servlet-class>com.sys4u.helloworld.servlet.HelloWorldServlet</servlet-class>
   </servlet>
   
   <servlet-mapping>
-  	<servlet-name>helloworld</servlet-name>
+  	<servlet-name>helloServlet</servlet-name>
   	<url-pattern>/hello</url-pattern> <!-- 클라이언트가 요청을 보낼 이름 -->
   </servlet-mapping>
   
