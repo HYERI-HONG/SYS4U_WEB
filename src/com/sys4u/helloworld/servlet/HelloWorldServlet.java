@@ -19,19 +19,17 @@ public class HelloWorldServlet extends HttpServlet {
 		int value = incrementer.incrementAndGet();
 		
 		StringBuilder responseMessage = new StringBuilder();
-		responseMessage.append(
-				"<!DOCTYPE html>" + 
-				"<html>" + 
-				"	<head>" + 
-				"		<meta charset='UTF-8'>" + 
-				"		<title>Index Page</title>" + 
-				"	</head>" + 
-				"	<body>" + 
-				"		<h2>Hello World!!</h2><br>" + 
-				"		<h3>visiter Count : </h3>" + value+
-				"	</body>" + 
-				"</html>"
-		);
+		responseMessage.append("<!DOCTYPE html>")
+				.append("<html>"                                   )
+				.append("	<head>"                                )
+				.append("		<meta charset='UTF-8'>"            )
+				.append("		<title>Index Page</title>"         )
+				.append("	</head>"                               )
+				.append("	<body>"                                )
+				.append("		<h2>Hello World!!</h2><br>"        )
+				.append("		<h3>visiter Count : </h3>" + value )
+				.append("	</body>"                               )
+				.append("</html>"                                  );                                                            
 		//response에 String으로 전송
 		response.getWriter().write(responseMessage.toString());
 	}

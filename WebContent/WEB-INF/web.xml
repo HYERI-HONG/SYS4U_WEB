@@ -9,7 +9,7 @@
   
   <servlet-mapping>
   	<servlet-name>helloworld</servlet-name>
-  	<url-pattern>/hello</url-pattern>
+  	<url-pattern>/hello</url-pattern> <!-- 클라이언트가 요청을 보낼 이름 -->
   </servlet-mapping>
   
   <!--
